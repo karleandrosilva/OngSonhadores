@@ -1,0 +1,27 @@
+header {
+    background-color: var(--cor-primaria); 
+    display: flex;
+    justify-content: space-evenly;
+    /* margin: 0 auto; */
+    max-width: 1700px;
+    height: 500px;
+    align-items: center;
+    
+}
+
+.container {
+    width: 500px;
+    display: block;
+}
+
+.container h1 {
+    margin: 0;
+}
+
+.container p {
+    width: 400px;
+}
+
+img {
+    height: 200px;
+}

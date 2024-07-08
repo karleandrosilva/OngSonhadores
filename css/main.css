@@ -1,0 +1,14 @@
+main {
+    background-color: var(--cor-secundaria); 
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    /* margin: 0 auto; */
+    max-width: 1700px;
+    height: 500px;
+    align-items: center;
+    
+}
+
+
+
