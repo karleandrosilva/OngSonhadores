@@ -1,12 +1,9 @@
-header {
-    background-color: var(--cor-primaria); 
+.section1 {
     display: flex;
     justify-content: space-evenly;
     /* margin: 0 auto; */
-    max-width: 1700px;
-    height: 500px;
+    height: 700px;
     align-items: center;
-    
 }
 
 .container {

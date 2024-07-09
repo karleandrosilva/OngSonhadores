@@ -15,7 +15,18 @@ body {
     margin: 0;
     background-color: white;
     font-family: sans-serif;
-    /* font-size: 20px; */
+    font-size: 20px;
+}
+
+.section_blue {
+    background-color: var(--cor-secundaria); 
+    color: white;
+    max-width: 1700px;
+}
+
+.section_pink {
+    background-color: var(--cor-primaria); 
+    color: black;
 }
 
 img {

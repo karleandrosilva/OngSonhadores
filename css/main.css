@@ -1,14 +1,32 @@
-main {
-    background-color: var(--cor-secundaria); 
-    color: white;
+.section2 {
     display: flex;
     justify-content: space-evenly;
     /* margin: 0 auto; */
-    max-width: 1700px;
-    height: 500px;
+    height: 700px;
     align-items: center;
-    
 }
 
 
+.section3 {
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    height: 700px;
+}
 
+
+.section3 h2 {
+    margin: 0px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.iniciativa {
+    display: block;
+    width: 300px;
+}
