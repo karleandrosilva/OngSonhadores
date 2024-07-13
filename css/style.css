@@ -21,7 +21,7 @@ body {
 .section_blue {
     background-color: var(--cor-secundaria); 
     color: white;
-    max-width: 1700px;
+   
 }
 
 .section_pink {
