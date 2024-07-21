@@ -43,8 +43,6 @@
 
     }
 
-    
-
     /* MAIN */
 
     .section2 {
@@ -86,17 +84,33 @@
     }
 
     
+    /* SECTION 3 */
 
 
     .section3, .container3 {
-        display: block; 
+       
     }
 
-    .iniciativa {
-        display: inline; 
+    .container3 {
+        display: inline-block;
         text-align: center;
         align-items: center;
+    }
 
+    .section3 {
+        height: 1400px;
+    }
+    
+
+    .iniciativa {
+        display: block; 
+        text-align: center;
+        align-items: center;
+    }
+
+    .iniciativa p {
+        margin-top: 20px;
+        margin-bottom: 40px;
     }
 
 }
