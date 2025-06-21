@@ -1,24 +1,27 @@
+.section_pink {
+    background-color: var(--cor-primaria);
+    padding: 80px 10%;
+}
+
 .section1 {
     display: flex;
-    justify-content: space-evenly;
-    /* margin: 0 auto; */
-    height: 700px;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .container {
-    width: 500px;
-    display: block;
+    max-width: 600px;
 }
 
 .container h1 {
-    margin: 0;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--cor-secundaria);
 }
 
 .container p {
-    width: 400px;
-}
-
-img {
-    height: 200px;
+    margin-bottom: 20px;
+    line-height: 1.6;
 }

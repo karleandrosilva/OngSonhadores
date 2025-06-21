@@ -1,116 +1,24 @@
-@media only screen and (max-width: 750px) {
-
-    body {
-        /* font-size: 18px; */
-        width: 450px;
+@media (max-width: 768px) {
+    .section1, .section2 {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .section_pink {
-        background-color: var(--cor-primaria); 
-        color: black;
-    }
-
-    /* HEADER */
-
-    .section1 {
-        display: block;
-        height: 680px;
-    }
-
-    .section1 img {
-        /* padding: 20px; */
-        padding-left: 10vw;
-        padding-top: 6vw;
-    }
-
-    .container {
-        width: 400px;
-    }
-
-    .container h1 {
-        padding-left: 10vw;
-        padding-top: 140px;
-    }
-
-    .container p {
-        /* padding-left: 20px; */
-        padding-left: 10vw;
-        width: 350px;
-    }
-
-    .container button {
-        margin-left: 40px;
-
-    }
-
-    /* MAIN */
-
-    .section2 {
-        display: block; 
-        height: 930px;
-    }
-
-    .section2 img {
-        display: none;  
-    }
-
-    .container2 {
-        width: auto;
-        display: block;
-    }
-
-    .container2 h2 {
-        margin: 0;
-        padding-left: 10vw;
-        padding-top: 60px;
-    }
-
-    .container2 p {
-        margin: 0;
-        padding-left: 10vw;
-        width: 320px;
-        padding-top: 20px;
-    }
-
-    .container2 button {
-        margin-top: 20px; 
-        margin-left: 40px;
-    }
-
-    .container2 img {
-        display: block;
-        margin-top: 30px; 
-        margin-left: 40px;
-    }
-
-    
-    /* SECTION 3 */
-
-
-    .section3, .container3 {
-       
+    .container, .container2 {
+        max-width: 100%;
     }
 
     .container3 {
-        display: inline-block;
-        text-align: center;
+        flex-direction: column;
         align-items: center;
     }
-
-    .section3 {
-        height: 1400px;
-    }
-    
 
     .iniciativa {
-        display: block; 
-        text-align: center;
-        align-items: center;
+        width: 90%;
     }
 
-    .iniciativa p {
-        margin-top: 20px;
-        margin-bottom: 40px;
+    button {
+        width: 60%;
+        margin: 10px 0;
     }
-
 }
