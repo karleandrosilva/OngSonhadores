@@ -1,4 +1,18 @@
 @media (max-width: 768px) {
+
+    .section_pink {
+        padding-top: 40px;
+    }
+
+    #logo {
+        width: 200px;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        border-radius: none;
+        box-shadow: none;
+    }
+
     .section1, .section2 {
         flex-direction: column;
         text-align: center;

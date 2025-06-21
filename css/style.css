@@ -49,3 +49,20 @@ a {
     color: white;
     text-decoration: none;
 }
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--cor-secundaria);
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--cor-primaria);
+}
+
+p {
+    font-size: 1.3rem;
+}
+
