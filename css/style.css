@@ -51,13 +51,13 @@ a {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 20px;
     color: var(--cor-secundaria);
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-bottom: 20px;
     color: var(--cor-primaria);
 }
