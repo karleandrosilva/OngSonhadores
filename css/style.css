@@ -51,18 +51,22 @@ a {
 }
 
 h1 {
-    font-size: 1.8rem;
+    font-size: 30px;
     margin-bottom: 20px;
     color: var(--cor-secundaria);
 }
 
 h2 {
-    font-size: 1.6rem;
+    font-size: 24px;
     margin-bottom: 20px;
     color: var(--cor-primaria);
 }
 
+h3 {
+    font-size: 18px;
+}
+
 p {
-    font-size: 1.2rem;
+    font-size: 16px;
 }
 
