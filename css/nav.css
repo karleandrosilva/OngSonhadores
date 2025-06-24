@@ -56,5 +56,6 @@ nav a:hover{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Adicione esta linha primeiro, ela corrige o blur para o Safari*/
+    backdrop-filter: blur(10px);  /* Esta linha ativa o blur*/
 }
