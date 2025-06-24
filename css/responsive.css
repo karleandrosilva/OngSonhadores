@@ -1,5 +1,26 @@
+@media (max-width: 890px){
+    .hideMobile{
+        display: none;
+    }
+
+    nav {
+        font-size: 15px;
+    }
+
+}
+
+@media (min-width: 890px){
+    .hideDesktop{
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
-    
+    header {
+        background-position: center;
+        height: 360px;
+    }
+
     h1 {
         font-size: 27px;
         max-width: 400px;
