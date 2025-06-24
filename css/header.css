@@ -2,9 +2,10 @@
 
 header {
     padding: 0px 40px;
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
     rgba(0, 0, 0, 0.455)
-    ), url('../assets/img/teste2.jpg');
+    ), url('../assets/img/teste2.jpg'); */
+    background-image: url('../assets/img/teste2.jpg');
     background-position: top;
     background-size: cover;
     color: white;
