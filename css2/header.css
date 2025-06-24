@@ -1,0 +1,31 @@
+.section_pink {
+    background-color: var(--cor-primaria);
+    padding: 80px 10%;
+}
+
+#logo {
+    display: none;
+}
+
+.section1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.container {
+    max-width: 600px;
+}
+
+/* .container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--cor-secundaria);
+} */
+
+.container p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
