@@ -63,6 +63,10 @@ h1 {
     padding: 40px;
 }
 
+.section-voluntariar p {
+    width: 70%;
+}
+
 h3 {
     font-size: 30px;
     /* margin-bottom: 20px; */
