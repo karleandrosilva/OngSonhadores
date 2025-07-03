@@ -94,3 +94,23 @@ h2 {
     height: 400px;
     background-image: url('../assets/img/teste2.jpg');
 }
+
+.numeros {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    /* background-color: aqua; */
+}
+
+.numeros span {
+    font-size: 30px;
+    color: var(--cor-secundaria);
+    font-weight: 800;
+}
+
+.numeros p {
+    color: white;
+    font-weight: 800;
+}

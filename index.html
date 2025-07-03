@@ -156,6 +156,27 @@
 
         <section class="section-3">
 
+            <div class="numeros">
+
+                <div class="numero">
+
+                    <span>+</span>
+                    <span class="num" data-val="6000">000</span>
+                    <p>Famílias atendidas</p>
+
+                </div>
+
+                <div class="numero">
+
+                    <span>+</span>
+                    <span class="num" data-val="3000">000</span>
+                    <p>Refeições distribuídas</p>
+
+                </div>
+
+
+            </div>
+
         </section>
 
 
@@ -206,6 +227,58 @@
             const sidebar = document.querySelector(".sidebar");
             sidebar.style.display = "none";
         }
+
+        // funcao para quando tiver perto da tela ela ativar esta funcao:
+        
+        let hasAnimated = false; // Evita executar mais de uma vez
+        const valueDisplays = document.querySelectorAll(".num");
+        const interval = 8000;
+
+        function startCounter() {
+            valueDisplays.forEach((valueDisplay) => {
+            let startValue = 0;
+            let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+            let duration = Math.floor(interval / endValue);
+
+            let counter = setInterval(() => {
+                startValue += 50;
+                valueDisplay.textContent = startValue.toLocaleString();
+                if (startValue === endValue) {
+                clearInterval(counter);
+                }
+            }, duration);
+            });
+        }
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+            if (entry.isIntersecting && !hasAnimated) {
+                startCounter();
+                hasAnimated = true;
+                observer.unobserve(entry.target); // Para de observar após a animação
+            }
+            });
+        }, { threshold: 0.8 }); // 70% da seção precisa estar visível
+
+        const targetSection = document.querySelector(".section-3");
+        observer.observe(targetSection);
+
+        // let valueDisplays = document.querySelectorAll(".num");
+
+        // let interval = 8000;
+        // valueDisplays.forEach((valueDisplay) => {
+        //     let startValue = 0;
+        //     let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+        //     let duration = Math.floor(interval / endValue);
+        //     let counter = setInterval(function () {
+        //         startValue += 100;
+        //         valueDisplay.textContent = startValue;
+        //         if (startValue == endValue) {
+        //         clearInterval(counter);
+        //         }
+        //     }, duration);
+        // });
+
     </script>
     
 </body>
