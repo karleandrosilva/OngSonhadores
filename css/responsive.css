@@ -127,9 +127,7 @@
     }
 
     .section-3 {
-
-        height: 560px;
-    
+        height: 700px;
     }
 
     .numeros {
@@ -142,5 +140,14 @@
         padding-bottom: 50px;
         height: 100%;
         /* background-color: rgb(204, 195, 26); */
+    }
+
+    footer {
+        height: 950px;
+    }
+
+    .footer-container {
+        display: block;
+        padding: 40px;
     }
 }
