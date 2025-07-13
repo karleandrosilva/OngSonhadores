@@ -134,6 +134,22 @@
         height: 700px;
     }
 
+    .section-4 {
+        padding: 0px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .propositos {
+        display: block;
+    }
+
+    
+
+
     .numeros {
         display: flex;
         flex-direction: column;
@@ -154,6 +170,8 @@
         display: block;
         padding: 40px;
     }
+
+
 }
 
 
