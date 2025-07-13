@@ -15,9 +15,11 @@ h2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 1vw;
     padding: 0px 40px;
     font-size: 12px;
     height: 750px;
+    
 }
 
 .section-1 img {

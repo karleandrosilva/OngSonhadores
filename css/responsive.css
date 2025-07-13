@@ -17,6 +17,11 @@
         /* padding: 40px 0px 0px 0px; */
         font-size: 12px;
         height: 700px;
+        
+    }
+
+    #testii {
+        margin-top: 30vw;
     }
     
     #img1 {
@@ -100,7 +105,6 @@
     .section-1 {
         justify-content: center;
         flex-direction: column;
-        
         font-size: 12px;
         min-height: 850px;
     }
@@ -151,3 +155,15 @@
         padding: 40px;
     }
 }
+
+
+/* 
+@media (max-width: 450px) {
+
+    .section-1 {
+        
+        height: 100%; 
+    }
+
+} */
+
