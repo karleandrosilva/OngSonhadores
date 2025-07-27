@@ -61,9 +61,46 @@
 
     <main>
 
+        <section class="doacao-section">
+            <div class="doacao-info">
+                <h2>Uma doação pode mudar tudo</h2>
+                <div class="linhaX"></div>
+
+                <p>Seja pontual ou recorrente, a sua doação impacta diretamente vidas. Toda ajuda é bem-vinda: R$10, R$50, R$100 ou qualquer outro valor.</p>
+
+                <ul class="doacao-lista">
+                <li>✅ Transparência garantida</li>
+                <li>✅ Relatórios de impacto enviados por e-mail</li>
+                <li>✅ Doações via Pix, boleto ou cartão</li>
+                </ul>
+
+                <p class="versiculo"><em>"Quem dá aos pobres, empresta a Deus." (Provérbios 19:17)</em></p>
+
+                <img src="../assets/img/imagem_doe.jpg" alt="Crianças sorrindo" class="img-doacao">
+            </div>
+
+            <div class="doacao-pix">
+                <h3>Ajude, seja um apoio na vida destas crianças</h3>
+                <p><strong>OSC SONHADORES MS</strong></p>
+                <p><strong>CNPJ: </strong>04.872.141/0001-55</p>
+                <p><strong>Banco: </strong>Sicred</p>
+                <p><strong>Agência: </strong>0913</p>
+                <p><strong>Conta Corrente: </strong>25956-8</p>
+                <p><strong>PIX: </strong>04.872.141/0001-55</p>
+
+                <img src="../assets/img/qrcode.png" alt="QR Code para doação" class="qr-doacao">
+
+                <div class="pix-container">
+                    <input type="text" id="chave-pix" value="04.872.141/0001-55" readonly>
+
+                    <button class="botao-copiar" onclick="copiarPix()">
+                        <span class="icone">📋</span> Copiar código Pix
+                    </button>
+                </div>
+            </div>
+        </section>
+
     </main>
-
-
 
 
     <script>
@@ -75,6 +112,14 @@
         function hideSidebar(){
             const sidebar = document.querySelector(".sidebar");
             sidebar.style.display = "none";
+        }
+
+        // função copiar pix
+        function copiarPix() {
+            const input = document.getElementById("chave-pix");
+            navigator.clipboard.writeText(input.value)
+            .then(() => alert("Chave Pix copiada para a área de transferência!"))
+            .catch(() => alert("Erro ao copiar"));
         }
     </script>
 </body>
