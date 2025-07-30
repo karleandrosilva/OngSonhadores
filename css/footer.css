@@ -27,7 +27,7 @@ footer li, a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 50px;
 }
 
 .footer-contato, .footer-logo, .footer-menu {

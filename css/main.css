@@ -239,12 +239,9 @@ h2 {
 
 .qr-doacao {
   margin-top: 20px;
-  max-width: 250px;
+  max-width: 200px;
   width: 100%;
 }
-
-
-
 
 .pix-container {
   display: flex;
