@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,7 +44,7 @@
             </ul>
         </nav>  
 
-        <h1 class="h1-2">Faça sua doação</h1>
+        <h1 class="h1-2">Projetos</h1>
         <div class="linhaX"></div>
         <div style="display: flex;">
 
@@ -53,7 +52,7 @@
             <span>
                 <img class="setinha" src="../assets/icons/seta.png" alt="">
             </span>
-            <span>Doação</span>
+            <span>Projetos</span>
 
         </div>
     
@@ -61,48 +60,70 @@
 
     <main>
 
-        <section class="doacao-section">
-            <div class="doacao-info">
-                <h2>Uma doação pode mudar tudo</h2>
-                <div class="linhaX"></div>
+        <section class="section-1" id="projetos">
+      <img id="img1" src="../assets/img/projeto1.jpg" alt="Projeto 1">
+      <img id="img2" src="../assets/img/projeto2.jpg" alt="Projeto 2">
 
-                <p>Seja pontual ou recorrente, a sua doação impacta diretamente vidas. Toda ajuda é bem-vinda: R$10, R$50, R$100 ou qualquer outro valor.</p>
+      <div class="section-1-2">
+        <h2 style="max-width: 450px;">Projetos que fazem a diferença</h2>
+        <div class="linhaX"></div>
+        <p>
+          Desenvolvemos ações sociais focadas em educação, alimentação, apoio espiritual e esportes para crianças e famílias em situação de vulnerabilidade. Veja como você tem feito parte dessa transformação!
+        </p>
+        <a href="../pages/doacao.html">
+          <button class="btn-2">Quero apoiar esses projetos</button>
+        </a>
+      </div>
 
-                <ul class="doacao-lista">
-                <li>✅ Transparência garantida</li>
-                <li>✅ Doações via Pix, boleto ou cartão</li>
-                <li>✅ Confiança e compromisso com quem precisa</li>
-            </ul>
+      <div class="section-1-3">
+        <h2>Projetos que fazem a diferença</h2>
+        <div class="linhaX"></div>
+        <p>
+          Desenvolvemos ações sociais focadas em educação, alimentação, apoio espiritual e esportes para crianças e famílias em situação de vulnerabilidade. Veja como você tem feito parte dessa transformação!
+        </p>
+        <a href="../pages/doacao.html">
+          <button class="btn-2">Quero apoiar esses projetos</button>
+        </a>
+      </div>
+    </section>
 
-                <p class="versiculo"><em>"Quem dá aos pobres, empresta a Deus." (Provérbios 19:17)</em></p>
+    <section class="section-4">
+      <h3>Galeria dos nossos projetos</h3>
+      <div class="propositos">
+        <div class="proposito">
+          <img src="../assets/img/projeto-escola.jpg" alt="Projeto Escola" class="img-doacao">
+          <h4>Educação</h4>
+          <p>Aulas de reforço escolar, alfabetização e leitura com professores voluntários.</p>
+        </div>
 
-                <img src="../assets/img/imagem_doe.jpg" alt="Crianças sorrindo" class="img-doacao">
-            </div>
+        <div class="proposito">
+          <img src="../assets/img/projeto-refeicao.jpg" alt="Projeto Alimentação" class="img-doacao">
+          <h4>Alimentação</h4>
+          <p>Distribuição semanal de refeições balanceadas para famílias cadastradas.</p>
+        </div>
 
-            <div class="doacao-pix">
-                <h3>Ajude, seja um apoio na vida destas crianças</h3>
-                <p><strong>OSC SONHADORES MS</strong></p>
-                <p><strong>CNPJ: </strong>04.872.141/0001-55</p>
-                <p><strong>Banco: </strong>Sicred</p>
-                <p><strong>Agência: </strong>0913</p>
-                <p><strong>Conta Corrente: </strong>25956-8</p>
-                <p><strong>PIX: </strong>04.872.141/0001-55</p>
+        <div class="proposito">
+          <img src="../assets/img/projeto-esporte.jpg" alt="Projeto Esporte" class="img-doacao">
+          <h4>Esportes</h4>
+          <p>Atividades esportivas que promovem saúde, disciplina e autoestima.</p>
+        </div>
+      </div>
+    </section>
 
-                <img src="../assets/img/qrCode.jpg" alt="QR Code para doação" class="qr-doacao">
-
-                <div class="pix-container">
-                    <input type="text" id="chave-pix" value="04.872.141/0001-55" readonly>
-
-                    <button class="botao-copiar" onclick="copiarPix()">
-                        <span class="icone">📋</span> Copiar código Pix
-                    </button>
-                </div>
-            </div>
-        </section>
+    <section class="efeito-parallax">
+      <h3>Você pode transformar mais vidas</h3>
+      <div class="linhaX"></div>
+      <p>Cada contribuição mantém nossos projetos vivos e atuantes.</p>
+      <a href="../pages/doacao.html">
+        <button class="btn-2" id="testeee">Quero contribuir
+          <img class="svg" src="../assets/icons/heart.png" alt="">
+        </button>
+      </a>
+    </section>
 
     </main>
 
-    <footer>
+    <footer id="footer-pages">
 
         <div class="footer-container">
 
@@ -187,6 +208,7 @@
 
     <p id="marca">&copy; 2025  ALBD & Osc Sonhadores MS.</p>
 
+
     <script>
         function showSidebar(){
             const sidebar = document.querySelector(".sidebar");
@@ -196,14 +218,6 @@
         function hideSidebar(){
             const sidebar = document.querySelector(".sidebar");
             sidebar.style.display = "none";
-        }
-
-        // função copiar pix
-        function copiarPix() {
-            const input = document.getElementById("chave-pix");
-            navigator.clipboard.writeText(input.value)
-            .then(() => alert("Chave Pix copiada para a área de transferência!"))
-            .catch(() => alert("Erro ao copiar"));
         }
     </script>
 </body>

@@ -173,6 +173,21 @@ h2 {
     flex-direction: column;
 }
 
+.efeito-parallax {
+  background-image: url( '../assets/img/imagem_doe.jpg');
+  background-position: center;
+  height: 400px;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  color: white;
+}
+
 /* TELA DOACAO */
 
 .doacao-section {
@@ -284,24 +299,6 @@ h2 {
   font-size: 1.2rem;
 }
 
-
-
-.efeito-parallax {
-  background-image: url( '../assets/img/imagem_doe.jpg');
-  background-position: center;
-  height: 400px;
-  background-attachment: fixed;
-  background-size: cover;
-  padding: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  color: white;
-}
-
 #testeee {
-  
   width: 100%;
 }
