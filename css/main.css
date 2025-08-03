@@ -283,3 +283,25 @@ h2 {
 .icone {
   font-size: 1.2rem;
 }
+
+
+
+.efeito-parallax {
+  background-image: url( '../assets/img/imagem_doe.jpg');
+  background-position: center;
+  height: 400px;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  color: white;
+}
+
+#testeee {
+  
+  width: 100%;
+}

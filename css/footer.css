@@ -5,6 +5,10 @@ footer {
     
 }
 
+#footer-pages {
+    margin-top: 0px;
+}
+
 .footer-container {
     background-color: var(--cor-primaria);
     height: 100%;
