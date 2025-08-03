@@ -329,6 +329,11 @@ h2 {
 
 /* TELA VOLUNTARIO */
 
+.doacao-info li {
+  list-style: none;
+  
+}
+
 .voluntario {
   display: flex;
   justify-content: center;
